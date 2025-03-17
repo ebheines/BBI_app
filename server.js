@@ -37,7 +37,18 @@ app.post('/api/submissions', (req, res) => {
     submission.serverTimestamp = new Date().toISOString();
     
     // Read current submissions
-    const submissionsData = JSON.parse(fs.readFileSync(DATA_FILE));
+    let submissionsData = [];
+    try {
+      submissionsData = JSON.parse(fs.readFileSync(DATA_FILE));
+      
+      // Make sure it's an array
+      if (!Array.isArray(submissionsData)) {
+        submissionsData = [];
+      }
+    } catch (error) {
+      console.error('Error reading submissions file, creating new:', error);
+      submissionsData = [];
+    }
     
     // Add new submission
     submissionsData.push(submission);
@@ -53,18 +64,3 @@ app.post('/api/submissions', (req, res) => {
 });
 
 // API to get all submissions (for admin)
-app.get('/api/submissions', (req, res) => {
-  try {
-    const submissionsData = JSON.parse(fs.readFileSync(DATA_FILE));
-    res.status(200).json(submissionsData);
-  } catch (error) {
-    console.error('Error fetching submissions:', error);
-    res.status(500).json({ success: false, message: 'Error fetching submissions' });
-  }
-});
-
-// Start the server
-app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
-  console.log(`Admin dashboard available at http://localhost:${PORT}/admin`);
-});
