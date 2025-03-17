@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Practice</title>
+    <link rel="stylesheet" href="styles-student.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sort These Cards</h1>
+            <p class="subtitle">Drag and drop the cards to arrange them from smallest to largest</p>
+        </header>
+        
+        <div class="sorting-container" id="sortingContainer">
+            <!-- Cards will be added here dynamically -->
+        </div>
+        
+        <div class="explanation-container">
+            <h2>Explain Your Approach</h2>
+            <textarea id="explanation" placeholder="Explain how you decided to sort these numbers..."></textarea>
+        </div>
+        
+        <button class="submit-btn" id="submitBtn">Submit Solution</button>
+        
+        <div class="feedback" id="feedback">
+            <div class="feedback-content">
+                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                    <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                    <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                </svg>
+                <p>Great job! Your solution has been submitted.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="student.js"></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+[
+  {
+    "sessionId": "m867y3wp9u8zpkaek48",
+    "startingArray": [
+      81,
+      4,
+      1,
+      23,
+      58,
+      45
+    ],
+    "finalArray": [
+      1,
+      4,
+      23,
+      45,
+      58,
+      81
+    ],
+    "steps": [
+      {
+        "action": "Initial arrangement",
+        "state": [
+          81,
+          4,
+          1,
+          23,
+          58,
+          45
+        ],
+        "timestamp": 16
+      },
+      {
+        "action": "Swapped 4 and 81",
+        "state": [
+          81,
+          4,
+          1,
+          23,
+          58,
+          45
+        ],
+        "timestamp": 11314
+      },
+      {
+        "action": "Swapped 1 and 4",
+        "state": [
+          4,
+          81,
+          1,
+          23,
+          58,
+          45
+        ],
+        "timestamp": 14083
+      },
+      {
+        "action": "Swapped 23 and 81",
+        "state": [
+          1,
+          4,
+          81,
+          23,
+          58,
+          45
+        ],
+        "timestamp": 16416
+      },
+      {
+        "action": "Swapped 58 and 81",
+        "state": [
+          1,
+          4,
+          23,
+          81,
+          58,
+          45
+        ],
+        "timestamp": 18082
+      },
+      {
+        "action": "Swapped 45 and 81",
+        "state": [
+          1,
+          4,
+          23,
+          58,
+          81,
+          45
+        ],
+        "timestamp": 19240
+      },
+      {
+        "action": "Swapped 58 and 45",
+        "state": [
+          1,
+          4,
+          23,
+          58,
+          45,
+          81
+        ],
+        "timestamp": 21398
+      }
+    ],
+    "explanation": "I choose the straightest way to sort it!",
+    "duration": 72859,
+    "correctlySorted": true,
+    "timestamp": "2025-03-12T17:54:47.396Z",
+    "serverTimestamp": "2025-03-12T17:54:47.405Z"
+  },
+  {
+    "sessionId": "m8680moh7pyrff6ifgc",
+    "startingArray": [
+      22,
+      99,
+      34,
+      99,
+      59,
+      11
+    ],
+    "finalArray": [
+      11,
+      22,
+      34,
+      59,
+      99,
+      99
+    ],
+    "steps": [
+      {
+        "action": "Initial arrangement",
+        "state": [
+          22,
+          99,
+          34,
+          99,
+          59,
+          11
+        ],
+        "timestamp": 5
+      },
+      {
+        "action": "Swapped 99 and 11",
+        "state": [
+          22,
+          99,
+          34,
+          99,
+          59,
+          11
+        ],
+        "timestamp": 11133
+      },
+      {
+        "action": "Swapped 59 and 11",
+        "state": [
+          22,
+          99,
+          34,
+          59,
+          11,
+          99
+        ],
+        "timestamp": 12717
+      },
+      {
+        "action": "Swapped 11 and 22",
+        "state": [
+          22,
+          99,
+          34,
+          11,
+          59,
+          99
+        ],
+        "timestamp": 14183
+      },
+      {
+        "action": "Swapped 99 and 34",
+        "state": [
+          11,
+          22,
+          99,
+          34,
+          59,
+          99
+        ],
+        "timestamp": 16580
+      },
+      {
+        "action": "Swapped 99 and 59",
+        "state": [
+          11,
+          22,
+          34,
+          99,
+          59,
+          99
+        ],
+        "timestamp": 19534
+      }
+    ],
+    "explanation": "jbvugcugcugc",
+    "duration": 23356,
+    "correctlySorted": true,
+    "timestamp": "2025-03-12T17:55:55.533Z",
+    "serverTimestamp": "2025-03-12T17:55:55.536Z"
+  }
+]
