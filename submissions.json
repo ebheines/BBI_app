@@ -206,5 +206,165 @@
     "correctlySorted": true,
     "timestamp": "2025-03-12T17:55:55.533Z",
     "serverTimestamp": "2025-03-12T17:55:55.536Z"
+  },
+  {
+    "sessionId": "m8d4jbcy6l9lzag84fg",
+    "startingArray": [
+      24,
+      8,
+      87,
+      21,
+      76,
+      27
+    ],
+    "finalArray": [
+      8,
+      21,
+      24,
+      27,
+      76,
+      87
+    ],
+    "steps": [
+      {
+        "action": "Initial arrangement",
+        "state": [
+          24,
+          8,
+          87,
+          21,
+          76,
+          27
+        ],
+        "timestamp": 76
+      },
+      {
+        "action": "Swapped 8 and 24",
+        "state": [
+          24,
+          8,
+          87,
+          21,
+          76,
+          27
+        ],
+        "timestamp": 5558
+      },
+      {
+        "action": "Swapped 21 and 24",
+        "state": [
+          8,
+          24,
+          87,
+          21,
+          76,
+          27
+        ],
+        "timestamp": 7154
+      },
+      {
+        "action": "Swapped 27 and 87",
+        "state": [
+          8,
+          21,
+          24,
+          87,
+          76,
+          27
+        ],
+        "timestamp": 9210
+      },
+      {
+        "action": "Swapped 87 and 76",
+        "state": [
+          8,
+          21,
+          24,
+          27,
+          87,
+          76
+        ],
+        "timestamp": 10629
+      }
+    ],
+    "explanation": "We switched the lowest number to the front",
+    "duration": 39349,
+    "correctlySorted": true,
+    "timestamp": "2025-03-17T13:53:08.087Z",
+    "serverTimestamp": "2025-03-17T13:53:08.094Z"
+  },
+  {
+    "sessionId": "m8d4kwfrylv11dwh22",
+    "startingArray": [
+      38,
+      57,
+      50,
+      34,
+      96,
+      16
+    ],
+    "finalArray": [
+      16,
+      34,
+      38,
+      50,
+      57,
+      96
+    ],
+    "steps": [
+      {
+        "action": "Initial arrangement",
+        "state": [
+          38,
+          57,
+          50,
+          34,
+          96,
+          16
+        ],
+        "timestamp": 3
+      },
+      {
+        "action": "Swapped 16 and 38",
+        "state": [
+          38,
+          57,
+          50,
+          34,
+          96,
+          16
+        ],
+        "timestamp": 2756
+      },
+      {
+        "action": "Swapped 34 and 38",
+        "state": [
+          16,
+          38,
+          57,
+          50,
+          34,
+          96
+        ],
+        "timestamp": 4734
+      },
+      {
+        "action": "Swapped 57 and 50",
+        "state": [
+          16,
+          34,
+          38,
+          57,
+          50,
+          96
+        ],
+        "timestamp": 6606
+      }
+    ],
+    "explanation": "sflksdfjølkadslføaksdf",
+    "duration": 9545,
+    "correctlySorted": true,
+    "timestamp": "2025-03-17T13:53:52.256Z",
+    "serverTimestamp": "2025-03-17T13:53:52.258Z"
   }
 ]

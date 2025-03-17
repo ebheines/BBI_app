@@ -64,3 +64,34 @@ app.post('/api/submissions', (req, res) => {
 });
 
 // API to get all submissions (for admin)
+app.get('/api/submissions', (req, res) => {
+  try {
+    if (!fs.existsSync(DATA_FILE)) {
+      return res.json([]);
+    }
+    
+    const submissionsData = JSON.parse(fs.readFileSync(DATA_FILE));
+    res.json(submissionsData);
+  } catch (error) {
+    console.error('Error fetching submissions:', error);
+    res.status(500).json({ error: 'Error fetching submissions' });
+  }
+});
+
+// Optional: API to reset data (for testing)
+app.post('/api/reset', (req, res) => {
+  try {
+    fs.writeFileSync(DATA_FILE, JSON.stringify([]));
+    res.status(200).json({ success: true, message: 'Data reset successfully' });
+  } catch (error) {
+    console.error('Error resetting data:', error);
+    res.status(500).json({ success: false, message: 'Error resetting data' });
+  }
+});
+
+// Start the server
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+  console.log(`Student interface: http://localhost:${PORT}`);
+  console.log(`Admin dashboard: http://localhost:${PORT}/admin`);
+});
